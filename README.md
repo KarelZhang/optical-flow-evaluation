@@ -1,8 +1,11 @@
-# OPTICAL FLOW TOOLKIT v0.1
-#### RUOTENG LI                                  
-#### 20 July 2016                                 
+# OPTICAL FLOW EVALUATION
+#### Jiaao Zhang (DUT Media)
+#### 13th DEC 2018 
+base on  [OPTICAL FLOW TOOLKIT v0.1](https://github.com/liruoteng/OpticalFlowToolkit)
 
+instructions to be waiting...
 
+# here is the original instruction
 This toolkit is a python implementation for read, write, calculate, and visualize
 KITTI 2012 Optical Flow, which contains
 200 training and 200 test image pairs each. Ground truth has been aquired by 
