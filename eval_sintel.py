@@ -30,7 +30,7 @@ def read_path(file_path):
     return gt_paths
 
 
-pred_flow_txt = 'pred_sintel_clean_flow.txt'
+pred_flow_txt = 'pred_sintel_final_flow_LDOF.txt'
 gt_flow_txt = 'gt_sintel_flow.txt'
 
 gt_number = count_text_lines(gt_flow_txt)
@@ -46,14 +46,19 @@ sum_AEE = []
 count = 0
 for i in range(gt_number):
 
-    count += 1
-
 
     pred_flow = fl.read_flow(pred_paths[i])
+
     gt_flow = fl.read_flow(gt_paths[i])
 
     res = fl.evaluate_flow(gt_flow, pred_flow)
-    sum_AEE.append(res)
+
+    # sum_AEE.append(res)
+    # count += 1
+
+    if res < 50:
+        sum_AEE.append(res)
+        count += 1
 
     print('running file, aee is {}'.format(res))
 
