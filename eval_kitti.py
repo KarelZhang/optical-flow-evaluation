@@ -31,7 +31,7 @@ def read_path(file_path):
 
 
 gt_file_path= 'gt_kitti_2015_flow.txt'
-pred_file_path = 'pred_kitti_flow_LDOF.txt'
+pred_file_path = 'pred_kitti_flow_EPIC.txt'
 
 num_sample = count_text_lines(gt_file_path)
 gt_paths = read_path(gt_file_path)

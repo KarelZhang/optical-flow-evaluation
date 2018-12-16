@@ -30,7 +30,7 @@ def read_path(file_path):
     return gt_paths
 
 
-pred_flow_txt = 'pred_sintel_final_flow_LDOF.txt'
+pred_flow_txt = 'pred_sintel_final_flow_EPIC.txt'
 gt_flow_txt = 'gt_sintel_flow.txt'
 
 gt_number = count_text_lines(gt_flow_txt)

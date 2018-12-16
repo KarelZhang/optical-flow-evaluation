@@ -30,7 +30,7 @@ def read_path(file_path):
     return gt_paths
 
 
-pred_flow_dir = '/media/zhangjiaao/data/flow/ldof/ldof_optical_midd/'
+pred_flow_dir = '/media/zhangjiaao/data/flow/flownet2_offical/midburry_flow/'
 gt_flow_txt = 'gt_midburry_flow.txt'
 
 gt_number = count_text_lines(gt_flow_txt)
